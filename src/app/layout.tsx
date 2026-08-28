@@ -2,8 +2,33 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "NERV — NERV-UI Command Center",
-  description: "Neon Genesis Evangelion UI Component Library — MAGI System Interface",
+  metadataBase: new URL("https://mdrbx.github.io"),
+  title: {
+    default: "NERV-UI — Typed React command-center components",
+    template: "%s | NERV-UI",
+  },
+  description:
+    "A typed React component library, live examples, and a portable agent skill for original command-center interfaces.",
+  applicationName: "NERV-UI",
+  keywords: ["React", "TypeScript", "component library", "design system", "agent skills", "Codex", "Claude Code", "dashboard", "HUD"],
+  authors: [{ name: "mdrbx", url: "https://github.com/mdrbx" }],
+  creator: "mdrbx",
+  publisher: "mdrbx",
+  alternates: { canonical: "/nerv-ui/" },
+  openGraph: {
+    type: "website",
+    url: "/nerv-ui/",
+    siteName: "NERV-UI",
+    title: "NERV-UI — Typed React command-center components",
+    description: "React components, live examples, and an agent skill for original command-center interfaces.",
+    images: [{ url: "/nerv-ui/social-preview.png", width: 1731, height: 909, alt: "NERV-UI abstract command-center interface" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "NERV-UI — Typed React command-center components",
+    description: "React components, live examples, and an agent skill for original command-center interfaces.",
+    images: ["/nerv-ui/social-preview.png"],
+  },
 };
 
 export const viewport: Viewport = {

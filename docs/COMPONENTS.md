@@ -7,7 +7,7 @@
 ╚══════════════════════════════════════════════════════════╝
 ```
 
-All components are exported from `@/components` via barrel file. Each component is fully typed with TypeScript interfaces.
+All consumer-facing components are exported from `@mdrbx/nerv-ui`. Each component is fully typed with TypeScript interfaces.
 
 ```tsx
 import { EmergencyBanner, Button, MagiSystemPanel } from "@mdrbx/nerv-ui";
