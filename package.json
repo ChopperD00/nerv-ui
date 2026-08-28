@@ -1,7 +1,7 @@
 {
   "name": "@mdrbx/nerv-ui",
   "version": "1.0.7",
-  "description": "NERV-UI: React component library inspired by NERV/MAGI interfaces from Neon Genesis Evangelion",
+  "description": "Typed React components, examples, and an agent skill for original command-center interfaces inspired by NERV/MAGI aesthetics.",
   "private": false,
   "license": "MIT",
   "author": "mdrbx",
@@ -10,22 +10,27 @@
     "url": "git+https://github.com/mdrbx/nerv-ui.git"
   },
   "homepage": "https://mdrbx.github.io/nerv-ui",
+  "bugs": {
+    "url": "https://github.com/mdrbx/nerv-ui/issues"
+  },
   "keywords": [
     "react",
     "ui",
-    "components",
+    "component-library",
     "design-system",
     "evangelion",
-    "eva",
-    "eva-ui",
-    "neon-genesis-evangelion",
     "nerv",
     "nerv-ui",
     "magi",
     "brutalist",
     "cyberpunk",
     "tailwindcss",
-    "framer-motion"
+    "framer-motion",
+    "agent-skills",
+    "claude-code",
+    "codex",
+    "dashboard",
+    "hud"
   ],
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -46,7 +51,8 @@
   },
   "files": [
     "dist/",
-    "tailwind.preset.js"
+    "tailwind.preset.js",
+    "skills/"
   ],
   "sideEffects": false,
   "publishConfig": {
@@ -58,11 +64,14 @@
     "build": "next build",
     "build:lib": "tsup",
     "start": "next start",
-    "lint": "next lint",
+    "lint": "eslint . --max-warnings=0",
     "type-check": "tsc --noEmit",
     "test": "vitest run",
     "test:watch": "vitest",
-    "test:coverage": "vitest run --coverage"
+    "test:coverage": "vitest run --coverage",
+    "check:skill": "node scripts/check-skill-exports.mjs",
+    "test:skill": "node scripts/test-skill-install.mjs",
+    "visibility:report": "powershell -ExecutionPolicy Bypass -File scripts/visibility-report.ps1"
   },
   "peerDependencies": {
     "framer-motion": "^11.0.0 || ^12.0.0",
