@@ -36,6 +36,25 @@ export const viewport: Viewport = {
   initialScale: 1,
 };
 
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "SoftwareSourceCode",
+  name: "NERV-UI",
+  description:
+    "A typed React component library and portable agent skill for original command-center interfaces.",
+  codeRepository: "https://github.com/mdrbx/nerv-ui",
+  url: "https://mdrbx.github.io/nerv-ui/",
+  downloadUrl: "https://www.npmjs.com/package/@mdrbx/nerv-ui",
+  license: "https://github.com/mdrbx/nerv-ui/blob/master/LICENSE",
+  programmingLanguage: ["TypeScript", "React"],
+  runtimePlatform: "Web browser",
+  author: {
+    "@type": "Person",
+    name: "mdrbx",
+    url: "https://github.com/mdrbx",
+  },
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -44,6 +63,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
         <link
           href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Fira+Code:wght@400;500;700&family=Barlow+Condensed:wght@300;400;500;600;700&family=Noto+Serif+JP:wght@400;700;900&family=Playfair+Display:wght@400;700;900&display=swap"
           rel="stylesheet"

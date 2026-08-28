@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Portable NERV-UI agent skill with Codex and Claude Code project discovery paths, Hermes installation guidance, verified component references, and reusable recipes
 - Packaged-consumer smoke test that installs the local npm tarball and builds real Vite and Next.js fixtures
+- Complete static sitemap, SoftwareSourceCode structured data, and exported-site internal link validation
 - `forwardRef` support on all components — every component now accepts `ref` and spreads native HTML attributes
 - `useId()` for accessible label/input association in `InputField` and `SelectMenu`
 - React Portal rendering for `SystemDialog` and `ToastContainer`

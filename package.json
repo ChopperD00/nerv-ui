@@ -70,6 +70,7 @@
     "test:watch": "vitest",
     "test:coverage": "vitest run --coverage",
     "check:skill": "node scripts/check-skill-exports.mjs",
+    "check:links": "node scripts/check-built-links.mjs",
     "test:skill": "node scripts/test-skill-install.mjs",
     "test:skill-react": "npm run build:lib && node scripts/test-skill-react-fixture.mjs",
     "visibility:report": "powershell -ExecutionPolicy Bypass -File scripts/visibility-report.ps1"
