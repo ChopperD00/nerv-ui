@@ -1,6 +1,8 @@
 import { defineConfig } from "tsup";
-import { copyFile, readFile, writeFile } from "fs/promises";
+import { readFile, writeFile } from "fs/promises";
 import { glob } from "tinyglobby";
+import postcss from "postcss";
+import tailwindcss from "@tailwindcss/postcss";
 
 export default defineConfig({
   // Entry point — barrel file exporting all components
@@ -48,7 +50,14 @@ export default defineConfig({
       }
     }
 
-    await copyFile("src/app/globals.css", "dist/styles.css");
-    console.log(`✓ Injected "use client" into ${files.length} output files`);
+    const cssSource = "src/app/globals.css";
+    const cssOutput = "dist/styles.css";
+    const css = await readFile(cssSource, "utf-8");
+    const result = await postcss([tailwindcss()]).process(css, {
+      from: cssSource,
+      to: cssOutput,
+    });
+    await writeFile(cssOutput, result.css);
+    console.log(`✓ Injected "use client" into ${files.length} output files and compiled standalone CSS`);
   },
 });

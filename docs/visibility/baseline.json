@@ -1,0 +1,66 @@
+{
+  "capturedAt": "2026-08-28T06:30:00Z",
+  "sources": {
+    "githubOwn": "https://api.github.com/repos/mdrbx/nerv-ui",
+    "githubCompetitor": "https://api.github.com/repos/TheGreatGildo/nerv-ui",
+    "npmDownloads": "https://api.npmjs.org/downloads/point/last-month/@mdrbx/nerv-ui",
+    "npmMetadata": "https://registry.npmjs.org/@mdrbx%2Fnerv-ui/latest"
+  },
+  "verifiedAt": "2026-08-28T07:07:55Z",
+  "project": {
+    "repository": "mdrbx/nerv-ui",
+    "createdAt": "2026-03-08T07:52:58Z",
+    "stars": 81,
+    "forks": 5,
+    "watchers": 81,
+    "subscribers": 2,
+    "latestRelease": "v1.0.7",
+    "latestReleasePublishedAt": "2026-08-28T06:21:10Z",
+    "npmPackage": "@mdrbx/nerv-ui@1.0.7",
+    "npmDownloadsLastMonth": 285,
+    "npmDownloadsPeriod": "2026-07-28..2026-08-26",
+    "githubTraffic": "Unavailable: GitHub CLI is not installed/authenticated in this environment. Owner-only views, clones, and referrers were not fabricated."
+  },
+  "competitor": {
+    "repository": "TheGreatGildo/nerv-ui",
+    "createdAt": "2026-03-08T01:59:31Z",
+    "stars": 215,
+    "forks": 12,
+    "watchers": 215,
+    "subscribers": 1,
+    "releases": 0,
+    "notes": "No npm package conclusion is made: the repository root lacks package.json, but that does not establish global npm absence."
+  },
+  "searchVisibility": {
+    "capturedAt": "2026-08-28T07:07:09Z",
+    "method": "Public web searches for the exact repository URLs, package name, and NERV-UI mentions. Search result counts were not recorded because they are unstable and not backlink totals.",
+    "queries": [
+      "\"github.com/mdrbx/nerv-ui\" -site:github.com/mdrbx/nerv-ui",
+      "\"@mdrbx/nerv-ui\"",
+      "\"github.com/TheGreatGildo/nerv-ui\" -site:github.com/TheGreatGildo/nerv-ui",
+      "site:news.ycombinator.com \"nerv-ui\" OR site:reddit.com \"nerv-ui\""
+    ],
+    "verifiedProjectResults": [
+      "https://www.npmjs.com/package/@mdrbx/nerv-ui",
+      "https://mdrbx.github.io/nerv-ui/docs/getting-started/installation/",
+      "https://news.ycombinator.com/item?id=47424558",
+      "https://news.ycombinator.com/item?id=49139304",
+      "https://explore.market.dev/ecosystems/framer-motion/projects/nerv-ui",
+      "https://hughyau.com/"
+    ],
+    "verifiedCompetitorResults": [
+      "https://agentskillshub.top/skill/TheGreatGildo/nerv-ui/"
+    ],
+    "limitations": "No exact Reddit result was verified in this search pass. Absence from these result pages is not evidence that no other mention exists."
+  },
+  "localBaseline": {
+    "components": 48,
+    "componentDocumentationPages": 48,
+    "examplePagesClaimedInReadme": 18,
+    "npmPackBeforeChanges": {
+      "files": 11,
+      "tarballSizeBytes": 344500,
+      "unpackedSizeBytes": 1883321
+    }
+  }
+}

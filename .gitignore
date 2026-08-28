@@ -41,8 +41,11 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# claude
-.claude/
+# claude — keep local state ignored, except the repository skill discovery link
+.claude/*
+!.claude/skills/
+.claude/skills/*
+!.claude/skills/nerv-ui
 .playwright-mcp/
 .playwright-cli/
 

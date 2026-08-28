@@ -2,8 +2,8 @@
   <ul align="center" style="list-style: none;">
     <summary>
       <h1>NERV-UI</h1><br>
-      <h2>Brutalist. Industrial. Maximum impact.</h2>
-      <p>A React component UI library that recreates the NERV headquarters interfaces from Evangelion.</p>
+      <h2>Typed React command-center components, plus a portable agent skill.</h2>
+      <p>Build original, sharp industrial dashboards, terminals, and flows in React without rebuilding the design system from scratch.</p>
     </summary>
   </ul>
 </div>
@@ -32,10 +32,30 @@
 
 ---
 
-## `> QUICK_START`
+## `> START_IN_30_SECONDS`
+
+**NERV-UI is a production React/TypeScript component library, a published npm package, 48 documented components, and a portable `SKILL.md` for coding agents.** See the [live demo](https://mdrbx.github.io/nerv-ui/), [examples](https://mdrbx.github.io/nerv-ui/examples/), [docs](https://mdrbx.github.io/nerv-ui/docs/), [npm package](https://www.npmjs.com/package/@mdrbx/nerv-ui), or [agent skill](skills/nerv-ui/SKILL.md).
+
+### `> USE_WITH_AN_AI_CODING_AGENT`
+
+Codex discovers the canonical skill from [`.agents/skills/nerv-ui`](.agents/skills/nerv-ui) in this repository. To install it for a user-level Codex setup, copy the same single directory:
 
 ```bash
-npm install @mdrbx/nerv-ui
+git clone --depth 1 https://github.com/mdrbx/nerv-ui.git /tmp/nerv-ui-skill
+mkdir -p ~/.codex/skills
+cp -R /tmp/nerv-ui-skill/skills/nerv-ui ~/.codex/skills/nerv-ui
+```
+
+Claude Code discovers the same source through `.claude/skills/nerv-ui`. For Hermes Agent, copy it to `~/.hermes/skills/nerv-ui` and confirm it appears in `hermes skills list`. These paths follow the current official documentation for each agent.
+
+The skill tells an agent when NERV-UI fits, installs the real package, uses only exported components, and includes dashboard, terminal, and auth recipes.
+
+**Prompt → agent → application:** “Install `@mdrbx/nerv-ui` and build an accessible operations dashboard with `DataGrid`, `Gauge`, and `BarChart`; use original labels and respect reduced motion.”
+
+### `> INSTALL_IN_A_REACT_PROJECT`
+
+```bash
+npm install @mdrbx/nerv-ui framer-motion
 ```
 
 ```tsx
@@ -63,7 +83,7 @@ export default function App() {
 }
 ```
 
-**Peer dependencies:** `react`, `react-dom`, `framer-motion`. Tailwind CSS is optional.
+**Peer dependencies:** `react`, `react-dom`, `framer-motion`. Tailwind CSS is optional. NERV-UI is the useful middle ground between a style-only prompt and a bespoke CSS rebuild: you get typed, importable, tested component primitives plus working compositions.
 
 <details>
 <summary>Tailwind CSS preset (optional)</summary>
@@ -81,9 +101,18 @@ export default {
 
 ---
 
+## `> WHY_NERV_UI`
+
+- **Real React package:** `@mdrbx/nerv-ui` ships TypeScript declarations and package CSS—not a pasted stylesheet or a visual prompt.
+- **Build from complete flows:** the [live examples](https://mdrbx.github.io/nerv-ui/examples/) cover dashboards, monitoring, forms, auth, content, and error states.
+- **Agent-ready without lock-in:** one canonical `SKILL.md` steers compatible agents toward the published exports and documented recipes.
+- **Accessible motion baseline:** interactive components and examples are built in React, and the project’s styling accounts for `prefers-reduced-motion`.
+
+---
+
 ## `> WHAT_IS_NERV_UI`
 
-NERV-UI is a **48-component React design system** published on npm, built to replicate the iconic CRT-era military interfaces of NERV headquarters. Every pixel follows strict brutalist design rules:
+NERV-UI is a **48-component React design system** published on npm for original CRT-era, command-center-inspired interfaces. Every pixel follows strict brutalist design rules:
 
 - **`border-radius: 0`** nearly everywhere — sharp industrial angles only
 - **NERV color palette** — black void, alert red, text orange, grid green, data cyan, magenta wave
@@ -198,9 +227,9 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for component patterns and design rules.
 ---
 
 
-## `> CREDITS AND INPIRATION`
+## `> CREDITS AND INSPIRATION`
 
-<p>I made this project because I thought it would be fun. A huge thanks to all the people who created and inspired the great Neon Genesis Evangelion anime over the years. This is a tribute, and I hope it will be perceived as a good one.</p>
+<p>NERV-UI is an independent fan-inspired open-source project. It is not affiliated with, endorsed by, or sponsored by the owners of Neon Genesis Evangelion or its related marks.</p>
 
 <p>MADE WITH [REDACTED] BY <a href="https://github.com/mdrbx">mdrbx</a></p>
 
@@ -211,4 +240,3 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for component patterns and design rules.
 ## `> LICENSE`
 
 MIT License. See [LICENSE](./LICENSE).
-

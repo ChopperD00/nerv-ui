@@ -2,12 +2,12 @@ import { Callout } from "@/components/docs";
 
 # Installation
 
-NERV-UI is a React component library inspired by the NERV/MAGI interfaces from Neon Genesis Evangelion. Built with Tailwind CSS, Framer Motion, and fully typed in TypeScript.
+NERV-UI is a typed React component library for original command-center-inspired interfaces. It is built with Tailwind CSS, Framer Motion, and TypeScript.
 
 ## Install the Package
 
 ```bash
-npm install @mdrbx/nerv-ui
+npm install @mdrbx/nerv-ui framer-motion
 ```
 
 <Callout type="info" title="PEER DEPENDENCIES">
@@ -19,6 +19,24 @@ npm install @mdrbx/nerv-ui
 npm install react react-dom framer-motion
 npm install -D tailwindcss
 ```
+
+## Use with a coding agent
+
+The repository contains one canonical Agent Skills-compatible source at
+[`skills/nerv-ui`](https://github.com/mdrbx/nerv-ui/tree/master/skills/nerv-ui).
+Codex can discover it from the repository’s `.agents/skills` symlink. For a
+user-level Codex installation, copy the directory into `~/.codex/skills/nerv-ui`:
+
+```bash
+git clone --depth 1 https://github.com/mdrbx/nerv-ui.git /tmp/nerv-ui-skill
+mkdir -p ~/.codex/skills
+cp -R /tmp/nerv-ui-skill/skills/nerv-ui ~/.codex/skills/nerv-ui
+```
+
+The skill guides an agent to install the published package, use verified exports,
+and check accessibility and reduced motion. Claude Code discovers the same
+canonical source through `.claude/skills/nerv-ui`. Hermes Agent users can copy
+it to `~/.hermes/skills/nerv-ui` and verify discovery with `hermes skills list`.
 
 ## Setup — Tailwind CSS 4
 

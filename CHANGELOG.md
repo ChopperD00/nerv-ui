@@ -7,8 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.8] - 2026-08-28
+
 ### Added
 
+- Portable NERV-UI agent skill with Codex and Claude Code project discovery paths, Hermes installation guidance, verified component references, and reusable recipes
+- Packaged-consumer smoke test that installs the local npm tarball and builds real Vite and Next.js fixtures
+- Complete static sitemap, SoftwareSourceCode structured data, and exported-site internal link validation
 - `forwardRef` support on all components — every component now accepts `ref` and spreads native HTML attributes
 - `useId()` for accessible label/input association in `InputField` and `SelectMenu`
 - React Portal rendering for `SystemDialog` and `ToastContainer`
@@ -24,11 +29,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
+- Compile `dist/styles.css` during the library build so consumers receive standalone CSS without requiring Tailwind CSS
 - Moved `next`, `@mdx-js/*`, `prism-react-renderer` from `dependencies` to `devDependencies` — consumers no longer install the entire doc site stack
 - Moved `react`, `react-dom`, `framer-motion` from `dependencies` to `devDependencies` (already in `peerDependencies`)
 
 ### Changed
 
+- Expanded package metadata, README discovery content, social metadata, and visibility documentation for npm, GitHub, and agent search
 - Updated README: component count from 17 to 30+, imports use `@mdrbx/nerv-ui`, added installation section
 - Updated `docs/COMPONENTS.md` with Phase 3-5 component documentation
 - All code examples use `from "@mdrbx/nerv-ui"` instead of `from "@/components"`
