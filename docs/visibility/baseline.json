@@ -1,0 +1,43 @@
+{
+  "capturedAt": "2026-08-28T06:30:00Z",
+  "sources": {
+    "githubOwn": "https://api.github.com/repos/mdrbx/nerv-ui",
+    "githubCompetitor": "https://api.github.com/repos/TheGreatGildo/nerv-ui",
+    "npmDownloads": "https://api.npmjs.org/downloads/point/last-month/@mdrbx/nerv-ui",
+    "npmMetadata": "https://registry.npmjs.org/@mdrbx%2Fnerv-ui/latest"
+  },
+  "project": {
+    "repository": "mdrbx/nerv-ui",
+    "createdAt": "2026-03-08T07:52:58Z",
+    "stars": 81,
+    "forks": 5,
+    "watchers": 81,
+    "subscribers": 2,
+    "latestRelease": "v1.0.7",
+    "latestReleasePublishedAt": "2026-08-28T06:21:10Z",
+    "npmPackage": "@mdrbx/nerv-ui@1.0.7",
+    "npmDownloadsLastMonth": 285,
+    "npmDownloadsPeriod": "2026-07-28..2026-08-26",
+    "githubTraffic": "Unavailable: GitHub CLI is not installed/authenticated in this environment. Owner-only views, clones, and referrers were not fabricated."
+  },
+  "competitor": {
+    "repository": "TheGreatGildo/nerv-ui",
+    "createdAt": "2026-03-08T01:59:31Z",
+    "stars": 215,
+    "forks": 12,
+    "watchers": 215,
+    "subscribers": 1,
+    "releases": 0,
+    "notes": "No npm package conclusion is made: the repository root lacks package.json, but that does not establish global npm absence."
+  },
+  "localBaseline": {
+    "components": 48,
+    "componentDocumentationPages": 48,
+    "examplePagesClaimedInReadme": 18,
+    "npmPackBeforeChanges": {
+      "files": 11,
+      "tarballSizeBytes": 344500,
+      "unpackedSizeBytes": 1883321
+    }
+  }
+}
