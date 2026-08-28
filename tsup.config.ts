@@ -1,5 +1,5 @@
 import { defineConfig } from "tsup";
-import { readFile, writeFile } from "fs/promises";
+import { copyFile, readFile, writeFile } from "fs/promises";
 import { glob } from "tinyglobby";
 
 export default defineConfig({
@@ -47,6 +47,8 @@ export default defineConfig({
         await writeFile(file, `"use client";\n${content}`);
       }
     }
+
+    await copyFile("src/app/globals.css", "dist/styles.css");
     console.log(`✓ Injected "use client" into ${files.length} output files`);
   },
 });

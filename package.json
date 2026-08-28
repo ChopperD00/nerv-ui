@@ -1,6 +1,6 @@
 {
   "name": "@mdrbx/nerv-ui",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "NERV-UI: React component library inspired by NERV/MAGI interfaces from Neon Genesis Evangelion",
   "private": false,
   "license": "MIT",
@@ -101,6 +101,6 @@
     "tailwindcss": "^4.1.7",
     "tsup": "^8.5.1",
     "typescript": "^5.8.3",
-    "vitest": "^3.2.1"
+    "vitest": "^4.1.11"
   }
 }
