@@ -9,9 +9,6 @@ const nextConfig = {
   trailingSlash: true,
   basePath: isProd ? "/nerv-ui" : "",
   assetPrefix: isProd ? "/nerv-ui/" : "",
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
   images: {
     unoptimized: true,
   },
