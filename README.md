@@ -46,7 +46,9 @@ mkdir -p ~/.codex/skills
 cp -R /tmp/nerv-ui-skill/skills/nerv-ui ~/.codex/skills/nerv-ui
 ```
 
-The skill tells an agent when NERV-UI fits, installs the real package, uses only exported components, and includes dashboard, terminal, and auth recipes. It is portable to SKILL.md-compatible agents; use each agent’s documented skill directory rather than an unverified installer command.
+Claude Code discovers the same source through `.claude/skills/nerv-ui`. For Hermes Agent, copy it to `~/.hermes/skills/nerv-ui` and confirm it appears in `hermes skills list`. These paths follow the current official documentation for each agent.
+
+The skill tells an agent when NERV-UI fits, installs the real package, uses only exported components, and includes dashboard, terminal, and auth recipes.
 
 **Prompt → agent → application:** “Install `@mdrbx/nerv-ui` and build an accessible operations dashboard with `DataGrid`, `Gauge`, and `BarChart`; use original labels and respect reduced motion.”
 

@@ -10,7 +10,7 @@ The 30-day ambition is to exceed the competitor’s qualified visibility and rea
 
 | Priority | Action | Expected impact | Effort | Risk | Dependency | Status | Channel | Next action |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| P0 | Canonical agent skill + export check | High | Medium | Low | Public branch | Implemented | Codex / SKILL.md | Test packaged copy |
+| P0 | Canonical agent skill + export check | High | Medium | Low | Public branch | Implemented | Codex / Claude Code / Hermes | Test packaged copy |
 | P0 | README first-screen conversion | High | Medium | Low | Skill path | Implemented | GitHub / npm | Validate links |
 | P0 | Original social preview + metadata | Medium | Medium | Low | Pages deploy | Implemented | GitHub / social cards | Set GitHub social preview manually |
 | P1 | PR to Heilcheng index | Medium | Low | Low | Public branch + PR | Ready | Skill directory | Submit after upstream branch is public |

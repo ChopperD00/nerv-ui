@@ -1,6 +1,7 @@
 ---
 name: nerv-ui
 description: Build original, accessible React command-center interfaces with the published @mdrbx/nerv-ui component library. Use for dashboards, monitoring terminals, operational tools, authentication screens, or sharp industrial HUD-style UI in React, Vite, or Next.js.
+compatibility: React 18 or 19 project with Node.js and npm; framer-motion is required and Tailwind CSS is optional.
 ---
 
 # NERV-UI
@@ -46,7 +47,22 @@ mkdir -p ~/.codex/skills
 cp -R /tmp/nerv-ui-skill/skills/nerv-ui ~/.codex/skills/nerv-ui
 ```
 
-For Claude Code or another SKILL.md-compatible agent, copy the same `nerv-ui` directory to that agent's documented project or user skill location. The source is deliberately agent-neutral; use the agent's own documented discovery path rather than inventing an installer command.
+For Claude Code, use the same directory at user or project scope:
+
+```bash
+mkdir -p ~/.claude/skills
+cp -R /tmp/nerv-ui-skill/skills/nerv-ui ~/.claude/skills/nerv-ui
+```
+
+For Hermes Agent, install the same directory in its user skill tree, then verify discovery:
+
+```bash
+mkdir -p ~/.hermes/skills
+cp -R /tmp/nerv-ui-skill/skills/nerv-ui ~/.hermes/skills/nerv-ui
+hermes skills list
+```
+
+The repository also exposes the canonical directory through symlinks at `.agents/skills/nerv-ui` for Codex and `.claude/skills/nerv-ui` for Claude Code. Do not maintain copied project variants.
 
 ## Design rules
 
