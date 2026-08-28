@@ -55,9 +55,28 @@ NERV-UI is a typed React component library for original command-center dashboard
 
 No npm publish is included in this change.
 
+## UTM matrix
+
+| Channel | `utm_source` | `utm_medium` | `utm_campaign` |
+| --- | --- | --- | --- |
+| Hacker News | `hn` | `post` | `agent-skill-launch` |
+| X | `x` | `social` | `agent-skill-launch` |
+| Reddit | `reddit` | `community` | `agent-skill-launch` |
+| LinkedIn | `linkedin` | `social` | `agent-skill-launch` |
+| Discord | `discord` | `community` | `agent-skill-launch` |
+| Skill directories | directory slug | `referral` | `agent-skill-launch` |
+
+Keep one source value per placement; do not add user-level identifiers. For Reddit drafts, replace `[demo link]` with the demo URL plus the row’s tags only after the selected community’s current self-promotion rules have been reviewed.
+
+## Visual assets
+
+- Social/GitHub preview: `docs/visibility/assets/nerv-ui-social-preview.png` (1731×909, original artwork).
+- Product motion: `docs/references/readme-surveillance-preview.gif` (1200×675, 474 KiB).
+- Static fallback: `banner.png`, displayed directly before the GIF in the README.
+
 ## Mini article
 
-### How NERV-UI turns a command-center aesthetic into a typed React design system
+### How NERV-UI turns the Evangelion command-center aesthetic into a typed React design system
 
 The hard part of a high-contrast interface is not choosing orange and black. It is making that visual language repeatable across a dense dashboard, a monitoring terminal, and a form without every screen becoming a one-off. NERV-UI packages the structural pieces—data grids, status views, charts, overlays, inputs, and navigation—as typed React exports, then demonstrates how they fit into full routes.
 

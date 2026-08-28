@@ -16,6 +16,17 @@ NERV-UI is package- and examples-first: the repository and npm package expose a 
 
 The competitor has visible discovery routes through [AgentSkillsHub](https://agentskillshub.top/skill/TheGreatGildo/nerv-ui/), [All4OpenClaw](https://all4openclaw.ai/), and a pinned reference in [rhettg/agent-skills](https://github.com/rhettg/agent-skills). GitHub code-search hit counts observed during the research were 79 for NERV-UI and 12 for the competitor; code-search hits are not backlink totals and should not be presented as such.
 
+## Search visibility and backlinks checked
+
+Public exact-name and exact-URL searches on 2026-08-28 verified that NERV-UI is indexed through its [npm package](https://www.npmjs.com/package/@mdrbx/nerv-ui), [installation documentation](https://mdrbx.github.io/nerv-ui/docs/getting-started/installation/), and npm keyword result pages. The searches also found four distinct external routes:
+
+- the maintainer’s earlier [Show HN launch](https://news.ycombinator.com/item?id=47424558), a voluntary promotion with 3 points and 2 comments at capture time;
+- an organic link to the surveillance example in the later [Anime User Interfaces HN discussion](https://news.ycombinator.com/item?id=49139304);
+- an apparently automated [market.dev ecosystem page](https://explore.market.dev/ecosystems/framer-motion/projects/nerv-ui), which is an index rather than evidence of adoption;
+- a credited reuse of the visual language on [Hugh Qiu’s site](https://hughyau.com/), which is a public integration signal.
+
+The same search pass did not verify an exact NERV-UI result on Reddit. Search-engine coverage is incomplete, so that is recorded as “not observed,” not “none exists.” X results were not used as a project baseline because no authoritative public result was retrievable without an account. The exact queries and URLs are preserved in `baseline.json`.
+
 ## Plausible inference
 
 The most credible explanation for the competitor’s early star velocity is launch distribution combined with immediate agent framing, rather than repository activity alone. Most forks arrived in the first week and its last repository push was in March. A third-party archive records launch-related X posts with large view/engagement figures on [March 8](https://github.com/AAARRRCCC/vault-context/blob/main/library/tweets/2026-03-08-nerv-ui-a-claude-code-skill-css-library-for-eva-aesthetic-te/metadata.json) and [March 10](https://github.com/AAARRRCCC/vault-context/blob/main/library/tweets/2026-03-10-nerv-ui-evangelion-themed-claude-code-skill-cssthreejs-compo/metadata.json). Those archive figures are unverified third-party records, so they are evidence of a likely launch channel—not a measured causal attribution.
@@ -34,6 +45,7 @@ Topics alone do not explain the gap: NERV-UI already has relevant GitHub topics 
 - [OpenAI skill documentation](https://learn.chatgpt.com/docs/build-skills) states that Codex skills follow the Agent Skills standard, use `SKILL.md` frontmatter, discover repository skills under `.agents/skills`, and support symlinks. It also recommends plugins as the reusable public-distribution route.
 - [Claude Code’s official skills documentation](https://code.claude.com/docs/en/slash-commands) states that project skills live under `.claude/skills/<name>/SKILL.md`, personal skills under `~/.claude/skills/`, and directory symlinks are followed. It identifies Agent Skills as the cross-tool open standard.
 - [Hermes Agent’s official skills guide](https://github.com/NousResearch/hermes-agent/blob/main/website/docs/guides/work-with-skills.md) documents `hermes skills list`, progressive loading of `SKILL.md` plus references, Hub installation, and installation from an HTTP(S) `SKILL.md` URL. The bundled catalogue documents its user skill tree under `~/.hermes/skills/`.
+- [AgentSkillsHub](https://agentskillshub.top/) states that its GitHub discovery and grading pipeline refreshes automatically every eight hours. Treat it as an automatic-indexing candidate after merge, not a manual submission target.
 - [Heilcheng/awesome-agent-skills](https://github.com/heilcheng/awesome-agent-skills) documents fork-and-PR contribution in its [contribution guide](https://github.com/heilcheng/awesome-agent-skills/blob/main/CONTRIBUTING.md). It is eligible after the branch is public and the skill is reachable.
 - [VoltAgent/awesome-agent-skills](https://github.com/VoltAgent/awesome-agent-skills) accepts link entries but its [guide](https://github.com/VoltAgent/awesome-agent-skills/blob/main/CONTRIBUTING.md) asks for real community usage. Queue it until that evidence exists.
 - [travisvn/awesome-claude-skills](https://github.com/travisvn/awesome-claude-skills/blob/main/CONTRIBUTING.md) prohibits AI-assisted/generated submissions. Do not submit through this workflow.

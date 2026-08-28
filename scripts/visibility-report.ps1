@@ -1,10 +1,15 @@
 param(
-  [string]$SnapshotPath = "docs/visibility/baseline.json",
+  [string]$SnapshotPath = "",
   [switch]$IncludeOwnerMetrics
 )
 
 $ErrorActionPreference = "Stop"
 $capturedAt = (Get-Date).ToUniversalTime().ToString("o")
+$fileTimestamp = (Get-Date).ToUniversalTime().ToString("yyyyMMdd-HHmmss")
+
+if (-not $SnapshotPath) {
+  $SnapshotPath = "docs/visibility/snapshots/visibility-$fileTimestamp.json"
+}
 
 function Get-PublicJson([string]$Uri) {
   Invoke-RestMethod -Uri $Uri -Headers @{ "User-Agent" = "nerv-ui-visibility-report" }
@@ -45,10 +50,15 @@ $snapshot = [ordered]@{
 if ($IncludeOwnerMetrics) {
   $gh = Get-Command gh -ErrorAction SilentlyContinue
   if ($gh) {
-    $snapshot.ownerMetrics = [ordered]@{
-      views = (gh api repos/mdrbx/nerv-ui/traffic/views --paginate | ConvertFrom-Json)
-      clones = (gh api repos/mdrbx/nerv-ui/traffic/clones --paginate | ConvertFrom-Json)
-      referrers = (gh api repos/mdrbx/nerv-ui/traffic/popular/referrers --paginate | ConvertFrom-Json)
+    $null = gh auth status 2>&1
+    if ($LASTEXITCODE -eq 0) {
+      $snapshot.ownerMetrics = [ordered]@{
+        views = (gh api repos/mdrbx/nerv-ui/traffic/views | ConvertFrom-Json)
+        clones = (gh api repos/mdrbx/nerv-ui/traffic/clones | ConvertFrom-Json)
+        referrers = (gh api repos/mdrbx/nerv-ui/traffic/popular/referrers | ConvertFrom-Json)
+      }
+    } else {
+      $snapshot.ownerMetrics = "Skipped: gh is installed but not authenticated."
     }
   } else {
     $snapshot.ownerMetrics = "Skipped: gh is not installed or unavailable."
