@@ -5,6 +5,7 @@
 - adds one canonical portable NERV-UI skill, discovered in-repository by Codex and Claude Code and documented for Hermes Agent;
 - verifies all 51 public component exports and installs the packaged library in real Vite and Next.js fixtures;
 - makes the package CSS standalone so Tailwind remains optional for consumers;
+- prepares patch release `1.0.8` for the post-merge release workflow;
 - sharpens the README’s package/agent conversion paths and adds complete search/social metadata;
 - adds a sourced baseline, competitive research, prioritized visibility strategy, submission tracker, and channel-specific launch kit.
 
@@ -24,7 +25,7 @@ The README also includes the existing 1200×675, 474 KiB product-motion GIF with
 - `npm run test:skill-react` — local tarball installed, type-checked, and built with Vite 7 and Next.js 16
 - `npm run build` — 79 static Next.js routes generated
 - `npm run check:links` — 652 internal links across 76 exported HTML pages validated
-- `npm pack --dry-run --json` — 14 files, 363,439-byte tarball, no media assets
+- `npm pack --dry-run --json` — 14 files, 363,455-byte tarball, no media assets
 - Browser QA — desktop and mobile layouts, no horizontal overflow, no application console errors, reduced-motion media query verified
 
 ## Positioning and external actions
