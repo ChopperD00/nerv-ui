@@ -71,6 +71,7 @@
     "test:coverage": "vitest run --coverage",
     "check:skill": "node scripts/check-skill-exports.mjs",
     "test:skill": "node scripts/test-skill-install.mjs",
+    "test:skill-react": "npm run build:lib && node scripts/test-skill-react-fixture.mjs",
     "visibility:report": "powershell -ExecutionPolicy Bypass -File scripts/visibility-report.ps1"
   },
   "peerDependencies": {
@@ -104,6 +105,7 @@
     "framer-motion": "^12.12.1",
     "jsdom": "^26.1.0",
     "next": "^16.2.2",
+    "postcss": "^8.5.6",
     "prism-react-renderer": "^2.4.1",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
