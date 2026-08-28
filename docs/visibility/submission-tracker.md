@@ -1,6 +1,6 @@
 # Submission tracker
 
-No directory PR has been opened yet. The project branch is public, but the canonical skill is not on the default branch until the project PR is reviewed and merged. The GitHub-authenticated browser path also requires explicit confirmation at the final submission action.
+The project PR is [mdrbx/nerv-ui#8](https://github.com/mdrbx/nerv-ui/pull/8). No directory PR has been opened yet: the canonical skill is not on the default branch until the project PR is reviewed and merged.
 
 | Channel | Eligibility / rule checked | Prepared text | Status | Next step |
 | --- | --- | --- | --- | --- |

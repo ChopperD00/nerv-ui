@@ -15,7 +15,7 @@ The 30-day ambition is to exceed the competitor’s qualified visibility and rea
 | P0 | Original social preview + metadata | Medium | Medium | Low | Pages deploy | Implemented | GitHub / social cards | Set GitHub social preview manually |
 | P1 | PR to Heilcheng index | Medium | Low | Low | Project PR merged | Ready after merge | Skill directory | Submit once the canonical skill is on the default branch |
 | P1 | Launch content with tagged UTM links | High | Medium | Medium | Maintainer approval | Ready | HN/X/Reddit/LinkedIn | Obtain approval before posting |
-| P1 | Add factual GitHub topics | Low–medium | Low | Low | Maintainer confirmation | Prepared | GitHub | Apply with the project PR creation approval |
+| P1 | Add factual GitHub topics | Low–medium | Low | Low | Maintainer confirmation | Prepared | GitHub | Await separate approval to change repository metadata |
 | P2 | VoltAgent listing | Medium | Low | Low | Community usage evidence | Queued | Skill directory | Reassess at J+14 |
 
 ## Repository metadata change set
