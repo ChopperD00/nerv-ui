@@ -1,6 +1,6 @@
 {
   "name": "@mdrbx/nerv-ui",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Typed React components, examples, and an agent skill for original command-center interfaces inspired by NERV/MAGI aesthetics.",
   "private": false,
   "license": "MIT",

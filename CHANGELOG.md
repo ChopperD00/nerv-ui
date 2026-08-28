@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.8] - 2026-08-28
+
 ### Added
 
 - Portable NERV-UI agent skill with Codex and Claude Code project discovery paths, Hermes installation guidance, verified component references, and reusable recipes

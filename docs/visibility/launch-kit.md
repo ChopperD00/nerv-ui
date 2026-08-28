@@ -44,7 +44,7 @@ Sharing NERV-UI: an MIT React/TypeScript component library for original command-
 
 NERV-UI is a typed React component library for original command-center dashboards, terminals, forms, and overlays. Its portable `SKILL.md` guides compatible coding agents to install `@mdrbx/nerv-ui`, use verified exports, follow recipes, and check accessibility/reduced motion.
 
-### Proposed GitHub release text
+### Proposed GitHub release text — v1.0.8
 
 ## Agent-native NERV-UI
 
